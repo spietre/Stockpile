@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Stockpile</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="dialog_shoplist_name">Name</string>
+    <string name="dialog_shoplist_price">Price</string>
+    <string name="dialog_shoplist_amount">Amount</string>
+    <string name="dialog_title">New shopping list</string>
+    <string name="dialog_add">Add</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <string name="upload">Upload</string>
+    <string name="download">Download</string>
+    <string name="delete">Delete this item?</string>
+    <string name="yes">Yes</string>
+    <string name="cancel">Cancel</string>
+</resources>
