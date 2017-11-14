@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements ShoplistDialogFra
     private static final String TAG = "MainActivity";
     private static File DB_FILE_PATH;
 
-    int RC_SIGN_IN = 2;
+    private int RC_SIGN_IN = 2;
 
     //    private GoogleSignInClient mGoogleSignInClient;
     private DriveId mDriveId;
@@ -189,11 +189,7 @@ public class MainActivity extends AppCompatActivity implements ShoplistDialogFra
                         else {
                             syncToDevice(mDriveContents);   //if we found the file but do not want to write to it that means that we are going to download it from drive
                         }
-
-                        Task<Void> commitTask =
-                                mDriveResourceClient.commitContents(mDriveContents, null);
-//                        Task<Void> discardTask = mDriveResourceClient.discardContents(mDriveContents);
-                        return commitTask;
+                        return null;
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
